@@ -15,25 +15,25 @@ session_start();
                 <div class="card">
                     <div class="card-header">
                         <h4>Svečių sukūrimas
-                            <a href="questList.php" class="btn btn-danger float-end">Atgal</a>                        
+                            <a href="questList.php" class="btn btn-secondary float-end">Atgal</a>                        
                         </h4>
                     </div>
                     <div class="card-body">
                         <form action="code.php" method="post">
                             <div class="mb-3">
                                 <label>Vardas</label>
-                                <input type="text" name="name" class="form-control">
+                                <input type="text" name="name" class="form-control" required>
                             </div>
                             <div class="mb-3">
                                 <label>Pavardė</label>
-                                <input type="text" name="surname" class="form-control">
+                                <input type="text" name="surname" class="form-control" required>
                             </div> 
                             <div class="mb-3">
                                 <label>Miestas</label>
-                                <input type="text" name="city" class="form-control">
+                                <input type="text" name="city" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <button type="submit" name="saveQuest" class="btn btn-primary">Išsaugoti svečius</button>
+                                <button type="submit" name="saveQuest" class="btn btn-secondary">Išsaugoti svečius</button>
                             </div>                           
                         </form>   
                     </div>    

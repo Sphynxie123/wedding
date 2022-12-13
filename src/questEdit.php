@@ -11,7 +11,7 @@ require 'dbcon.php';
                 <div class="card">
                     <div class="card-header">
                         <h4>Svečių redagavimas
-                            <a href="questList.php" class="btn btn-danger float-end">Atgal</a>                        
+                            <a href="questList.php" class="btn btn-secondary float-end">Atgal</a>                        
                         </h4>
                     </div>
                     <div class="card-body">
@@ -33,19 +33,19 @@ require 'dbcon.php';
                                     <input type="hidden" name="id" value="<?= $quest['id']; ?>">
                                     <div class="mb-3">
                                         <label>Vardas</label>
-                                        <input type="text" name="name" value="<?= $quest['name']; ?>" class="form-control">
+                                        <input type="text" name="name" value="<?= $quest['name']; ?>" class="form-control" required>
                                     </div>
                                     <div class="mb-3">
                                         <label>Pavardė</label>
-                                        <input type="text" name="surname"  value="<?= $quest['surname']; ?>"  class="form-control">
+                                        <input type="text" name="surname"  value="<?= $quest['surname']; ?>"  class="form-control" required>
                                     </div> 
                                     <div class="mb-3">
                                         <label>Miestas</label>
-                                        <input type="text" name="city"  value="<?= $quest['city']; ?>" class="form-control">
+                                        <input type="text" name="city"  value="<?= $quest['city']; ?>" class="form-control" required>
                                     </div>
                                     <div class="mb-3">
-                                        <button type="submit" name="updateQuest" class="btn btn-primary">Atnaujinti svečius</button>
-                                    </div>                           
+                                        <button type="submit" name="updateQuest" class="btn btn-secondary">Atnaujinti svečius</button>
+                                    </div>                                                               
                                 </form>
                                 <?php
                             }

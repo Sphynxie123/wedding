@@ -1,6 +1,53 @@
 <?php
     session_start();
     require 'dbcon.php';
+
+    if(isset($_POST['saveComments']))
+    {
+ 
+        $comment = mysqli_real_escape_string($con, $_POST['comment']);
+
+        $query = "INSERT INTO comment (comment) VALUES
+                    ('$comment')"; 
+
+        $query_run = mysqli_query($con, $query);
+
+        if($query_run)
+        {
+            $_SESSION['message'] = "Komentaras sukurtas";
+            header("Location: createComments.php");
+            exit(0);
+        } else 
+        {
+            $_SESSION['message'] = "Komentaras nesukurtas";
+            header("Location: createComments.php");
+            exit(0);
+        }  
+        
+    }
+    
+    if(isset($_POST['updateComments']))
+    {
+        $id = mysqli_real_escape_string($con, $_POST['id']);
+        $comment = mysqli_real_escape_string($con, $_POST['comment']);
+
+        $query = "UPDATE comment SET comment='$comment' 
+                    WHERE id='$id' "; 
+        
+        $query_run = mysqli_query($con, $query);
+        
+        if($query_run)
+        {
+            $_SESSION['message'] = "Komentaras atnaujinas";
+            header("Location: index.php");
+            exit(0);
+        } else 
+        {
+            $_SESSION['message'] = "Komentaras neatnaujintas";
+            header("Location: index.php");
+            exit(0);
+        }
+    }
     
     if(isset($_POST['questDelete']))
     {
@@ -48,6 +95,7 @@
             exit(0);
         }       
     }
+    
     if(isset($_POST['saveQuest']))
     {
         $name = mysqli_real_escape_string($con, $_POST['name']);

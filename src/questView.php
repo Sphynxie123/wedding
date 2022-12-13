@@ -9,7 +9,7 @@ require 'dbcon.php';
                 <div class="card">
                     <div class="card-header">
                         <h4>Svečių sąrašo peržiūrėjimas
-                            <a href="questList.php" class="btn btn-danger float-end">Atgal</a>                        
+                            <a href="questList.php" class="btn btn-secondary float-end">Atgal</a>                        
                         </h4>
                     </div>
                     <div class="card-body">

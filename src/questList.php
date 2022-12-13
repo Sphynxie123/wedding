@@ -16,7 +16,7 @@
                 <div class="card">
                     <div class="card-header">
                         <h4>Svečių sąrašas
-                            <a href="questCreate.php" class="btn btn-primary float-end">Sukūrti svečią</a>
+                            <a href="questCreate.php" class="btn btn-secondary float-end">Sukūrti svečią</a>
                         </h4>    
                     </div>
                     <div class="card-body">
@@ -47,10 +47,10 @@
                                                     <td><?=$quest['surname'];?></td>
                                                     <td><?=$quest['city'];?></td>
                                                     <td>
-                                                        <a href="questView.php?id=<?= $quest['id'];?>" class="btn btn-success btn-sm">Peržiūrėti</a>
-                                                        <a href="questEdit.php?id=<?= $quest['id'];?>" class="btn btn-success btn-sm">Koreguoti</a>
+                                                        <a href="questView.php?id=<?= $quest['id'];?>" class="btn btn-secondary btn-sm">Peržiūrėti</a>
+                                                        <a href="questEdit.php?id=<?= $quest['id'];?>" class="btn btn-secondary btn-sm">Koreguoti</a>
                                                         <form action="code.php" method="post" class="d-inline">
-                                                            <button type="submit" name="questDelete" value="<?= $quest['id']; ?>"class="btn btn-danger btn-sm">Trinti</button>                                                            
+                                                            <button type="submit" name="questDelete" value="<?= $quest['id']; ?>"class="btn btn-dark btn-sm">Trinti</button>                                                            
                                                         </form>    
                                                         </td>                                                    
                                                 </tr> 

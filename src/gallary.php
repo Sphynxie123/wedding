@@ -1,20 +1,72 @@
-<?php
-    include 'insert.php';
-?>
 <?php include('includes/header.php');?>
 <section>
     <div class="container mt-3">
-        <form action="" method="post" enctype="multipart/form-data">
-            <input type="text" name="PhotoTitle" placeholder="Photo Title">
-            <br><br>
-            <input type="text" name="PhotoAuthor" placeholder="Photo Author">
-            <br><br>
-            <input type="text" name="Photo" placeholder="Photo">
-            <br><br>
-            <input type="file" name="PhotoTitle" placeholder="Photo Title">
-            <br><br>
-            <input type="submit" name="insert_btn" value="Insert">
-        </form>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card">
+            <img src="images/W03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">                
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="images/W04.jpg" class="card-img-top" alt="...">
+            <div class="card-body">                
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="images/W05.jpg" class="card-img-top" alt="...">
+            <div class="card-body">                
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="images/W06.jpg" class="card-img-top" alt="...">
+            <div class="card-body">                
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>                
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="images/W03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">                
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="images/W04.jpg" class="card-img-top" alt="...">
+            <div class="card-body">                
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="images/W05.jpg" class="card-img-top" alt="...">
+            <div class="card-body">                
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="images/W06.jpg" class="card-img-top" alt="...">
+            <div class="card-body">                
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>                
+            </div>
+        </div>        
+        </div>
     </div>
 </section>
 <?php include('includes/footer.php');?>
